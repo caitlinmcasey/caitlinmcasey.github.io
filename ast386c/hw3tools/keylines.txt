@@ -1,0 +1,37 @@
+prominent lines in the rest-frame UV/optical/NIR
+(wavelength in angstroms)
+
+# wave[AA] name
+1215.67    Ly\alpha
+1550.00	   CIV
+1909	   CIII]
+3727	   [OII]
+4861.3	   H\beta
+6549	   [NII]
+6562.8	   H\alpha
+6583	   [NII]
+12818.	   Pa\beta
+18751.	   Pa\alpha
+
+
+prominent lines in the rest-frame mm
+(frequency in MHz)
+
+# name freq[MHz]
+CO(1-0)	115271.2
+CO(2-1)	230538.
+CO(3-2)	345769.
+CO(4-3)	461040.8
+CI(1-0) 492000.
+CO(5-4)	576267.9
+CO(6-5)	691473.1
+CO(7-6)	806651.8
+CI(2-1) 809342.
+CO(8-7)	921799.7
+CO(9-8) 1037020.
+CO(10-9) 1152250.
+CO(11-10) 1267470.
+CO(12-11) 1373090.
+CO(13-12) 1478710.
+CO(14-13) 1584330.
+CII	  1898730.

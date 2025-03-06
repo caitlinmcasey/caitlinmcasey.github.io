@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Caitlin Casey -- MMPZ: millimeter photometric redshift tool</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Caitlin M. Casey</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="research.html">Research</a></li>
+											<li><a href="group.html">Group Members</a></li>
+											<li><a href="downloads.html">Downloads / Tools</a></li>
+											<li><a href="teaching.html">Teaching</a></li>
+											<li><a href="equity_inclusion.html">Equity / Inclusion</a></li>
+											<li><a href="http://www.as.utexas.edu/taurus">TAURUS</a></li>
+										</ul>
+
+<img src="images/dustcloud_white.png" alt="" height="80">
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>MMpz: The millimeter photometric redshift tool</h2>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+<img src="images/resultsmmpz.png" class="center fit"><br>
+
+
+<p><b>The MMPZ tool is designed to provide a far-infrared/millimeter photometric redshift for dusty galaxies which lack good redshift constraints.</b>
+  Galaxies without spectroscopic redshifts or good optical/near-infrared photometric redshifts suffer from highly uncertain redshift constraints, due to the strong degeneracy of millimeter flux densities and colors with redshift.  The MMPZ tool is designed to interpret all available flux density constraints in the FIR/mm regime of a galaxy's spectrum (rest-frame ~5um-3mm) and infer the best possible redshift constriants.  It takes into account: (a) the intrinsic breadth in galaxies' rest-frame SEDs (reflecting a variety of dust temperatures) and (b) uses galaxies flux densities, in addition to their FIR/mm colors, to determine the best underlying redshift constraints; the latter is done by understanding galaxies' distributions in the IR luminosity--rest-frame peak wavelength plane (hotter galaxies are brighter).  For example, between two galaxies with the exact same FIR/mm colors but one at fainter flux densities and one with brighter flux densities, MMPZ will guess the redshift probability density distribution of the brighter source skews toward higher redshifts than the fainter source.  This is because brighter sources are likely to be hotter, and with the same observed peak wavelength, hotter galaxies will sit at higher redshifts.</p>
+
+<p>Read more about the MMPZ algorithm in the accompanying paper, Casey (2020, submitted).</p>
+
+<p class="center">Download MMPZ idl package here: <a href="mmpz_package.tar">mmpz_package.tar</a></p>
+
+<p>(Instructions and example given therein)</p>
+
+<br><br>
+<p>(If you want a version in python, well, ask me ...later)</p>
+
+
+								</section>
+</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; C.M. Casey 2016</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> (it's free)</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PCKNGYZ5CN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PCKNGYZ5CN');
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3599112-4', 'auto');
+  ga('send', 'pageview');
+
+</script></html>

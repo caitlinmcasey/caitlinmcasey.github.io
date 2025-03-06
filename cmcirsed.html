@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Caitlin Casey -- cmcirsed.pro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Caitlin M. Casey</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="research.html">Research</a></li>
+											<li><a href="group.html">Group Members</a></li>
+											<li><a href="downloads.html">Downloads / Tools</a></li>
+											<li><a href="teaching.html">Teaching</a></li>
+											<li><a href="equity_inclusion.html">Equity / Inclusion</a></li>
+											<li><a href="http://www.as.utexas.edu/taurus">TAURUS</a></li>
+										</ul>
+
+<img src="images/dustcloud_white.png" alt="" height="80">
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>cmcirsed.pro</h2>
+							<p>far-infrared spectral energy distribution fitting for galaxies near and far</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+<img src="images/sedfits.png" class="center fit"><br>
+
+
+<p>The cmcirsed.pro SED fitting code (written for IDL) is described
+in <a href="http://adsabs.harvard.edu/abs/2012MNRAS.425.3094C">Casey
+(2012)</a>. Please let me know if you have questions or encounter any
+issues.</p>
+
+<p class="center"><a href="cmcirsed.tar.gz" class="button">download cmcirsed package here</a></p><br><br>
+
+
+									<header>
+										<h4>Download & Installation Instructions</h4>
+									</header>
+<p>Unpack tarball in a new subdirectory of your local IDL directory
+(included in your IDL path).  See the header of cmcirsed.pro for notes
+on how to use the fitting code.  Not every procedure is documented
+perfectly, so please contact me if you have a question or problem.</p>
+
+									<header>
+										<h4>Description of contents</h4>
+									</header>
+<p>This package contains the following IDL routines:
+<ul>
+<li>cmcirsed.pro - the fitting procedure used to fit FIR photometric points to a modified blackbody and mid-IR powerlaw with known redshift
+<li>cmcirsed_nopl.pro - same as above but without the mid-IR powerlaw component fitting
+<li>fluxlfirtosed.pro - with known redshift, IR luminosity and a single FIR photometric point, generate the most plausible FIR SED fit
+<li>fluxtdtosed.pro - with known redshift, dust temperature and a single FIR photometric point, generate the most plausible FIR SED fit
+<li>seddetlim.pro - computes the luminosity detection limit as a function of dust temperature given a wavelength, flux limit and redshift
+<li>sedtolfir.pro - integrate a given FIR SED (e.g. from the routines above) to calculate a FIR luminosity (can specify integrands)
+<li>sedtosir.pro - same as sedtolfir but integrate to units of W/m^2 (can specify integrands)
+<li>tdtosed.pro - with known redshift, dust temperature, and luminosity generate a FIR SED
+<li>(dependency) lfirtoradio.pro - given a redshift and IR luminosity, calculate a radio flux density at rest-frame 1.4GHz
+<li>(dependency) radiotolfir.pro - the reverse of the procedure above
+<li>(dependency) makehx.pro - makes an array quickly with specified min, max, and bin
+<li>(dependency) noramlizepoint.pro - quickly compute offset in flux density for an SED template and the given observations
+<li>(dependency) takeaway.pro - takeaway elements of one array if they are members of another array
+<li>(dependency) horz.pro - draw a horizontal line on an idl window
+<li>(dependency) ver.pro - draw a vertical line on an idl window
+<li>(dependency) oplot_lines.pro - overplot line segments on an idl window
+<li>(dependency) lumdist.pro - computes luminosity distance for a given redshift, revised from goddard version to allow cm input
+</ul>
+</p>
+
+
+<hr>
+<p><b>Troubleshooting tip:</b> If there are issues with your SED fitting, I
+would recommend trying to figure out which photometric point is
+causing you problems; many users’ problems trace back to a photometric
+point with an unrealistic uncertainty.</p>
+
+								</section>
+</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; C.M. Casey 2016</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> (it's free)</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PCKNGYZ5CN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PCKNGYZ5CN');
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3599112-4', 'auto');
+  ga('send', 'pageview');
+
+</script></html>
